@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.im.abesit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/abesit0"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".splashscreen" />
+        <activity
+            android:name=".aboutus"
+            android:label="ABOUT US" />
+        <activity android:name=".contact"
+            android:label="CONTACT US"/>
+        <activity android:name=".moodle"
+            android:label="MOODLE"/>
+        <activity android:name=".library"
+            android:label="LIBRARY"/>
+
+        <activity android:name=".campus"
+            android:label="CAMPUS"/>
+        <activity android:name=".placement"
+            android:label="PLACEMENT"/>
+        <activity android:name=".academic"
+            android:label="ACADEMIC CALENDER"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB6-CB7YixGUIcCCU70_5m2WZUhu_9Rdwg" />
+
+        <activity android:name=".NetworkActivity"
+        android:label="NOTICE">
+    </activity>
+        <activity
+            android:name=".maps"
+            android:label="@string/title_activity_maps"></activity>
+    </application>
+
+</manifest>
